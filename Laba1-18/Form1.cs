@@ -66,15 +66,15 @@ namespace Laba1_18
                 {
                     if (x <= 0)
                     {
-                        y = Math.Pow(x, 4) + 2 * Math.Pow(x, 3) - x;
+                        y = Math.Pow(Math.Sin(x * x * x), 2); 
                     }
                     else if (x > 0 && x <= a)
                     {
-                        y = Math.Exp(-x) + Math.Pow(x, 0.25);
+                        y = Math.Pow(6 * x - Math.Pow(x, 2) + 1, 1.0 / 5); 
                     }
                     else
                     {
-                        y = Math.Log(Math.Pow(x, 3) + Math.Pow(x, 3));
+                        y = 2 * Math.Sin(x - Math.Exp(-x)); 
                     }
 
                     dg.Rows.Add(x.ToString(), y.ToString());
